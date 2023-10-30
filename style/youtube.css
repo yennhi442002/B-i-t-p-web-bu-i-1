@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* header section*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 15px;
+}
+main {
+  height: calc(100vh - 70px);
+  display: flex;
+  background-color: #f9f9f9;
+}
+/* Sidebar */ 
+.side-bar {
+  height: 100%;
+  width: 17%;
+  background-color: white;
+  overflow-y: hidden;
+} 
+@media (max-width: 768px) {
+  .side-bar {
+    display: none;
+  }
+}
+.left {
+  display: flex;
+  align-items: center;
+ }
+ 
+ .left #menu {
+  padding: 0 7px;
+  cursor: pointer;
+ }
+ .search {
+  display: flex;
+ }
+ 
+ .search form {
+  display: flex;
+  border: 1px solid #ddd;
+  height: 45px;
+ }
+ .search input {
+  width: 600px;
+  padding:10px;
+  border: 0;
+  height: 100%;
+  border-radius: 2px 0 0 2px
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #ddd;
+}
+.search button {
+  height: 100%;
+  width: 60px;
+  border: none;
+}
+ 
+.mic {
+  margin-top: 10px;
+}
+.material-icons {
+  color: rgb(100, 100, 100);
+  padding: 0 7px;
+  cursor: pointer;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 25px;
+}
+
+.nav-link span {
+  margin-left: 15px;
+}
+
+.nav-link:hover {
+  background: #e5e5e5;
+  cursor: pointer;
+}
+
+.active {
+  background: #e5e5e5;
+}
+hr {
+  height: 1px;
+  background-color: #e5e5e5;
+  border: none;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  padding: 20px;
+}
+
+.content__item {
+  margin: 0 15px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: black;
+}
+
+.content__item img {
+  width: 250px;
+  height: 150px;
+}
+
+.content__infor {
+  margin: 0.5rem 0 1rem 0;
+  display: flex;
+  max-width: 250px;
+}
+
+.content__infor--img {
+  width: 40px;
+  height: 40px;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-right: 1rem;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.content__infor--video {
+  max-width: 171px;
+}
+
+.content__infor--img img {
+  width: 50px;
+  height: 50px;
+}
+
+.content__infor--title {
+  font-weight: bold;
+  padding-bottom: 6px;
+}
+
+.content__infor--more {
+  color: #a6a6a6;
+}

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2rem;
+}
+
+.header {
+    text-align: center;
+    margin: 2rem;
+}
+
+.header_title {
+    padding: 10px;
+    font-size: 3rem;
+    color: rgb(20, 209, 168);
+}
+
+main {
+    width: 65vw;
+    margin: 0 auto;
+}
+
+main .main_title {
+    font-weight: bold;
+    padding: 10px 0;
+    color: rgb(20, 209, 168);
+    font-size: 1.3rem;
+}
+
+
+.intro ul {
+    display: flex;
+}
+
+.intro li {
+    list-style: none;
+    margin: 2rem;
+}
+
+.intro li:first-child {
+    width: 16rem;
+}
+
+/* experience */
+.exp{
+    background-color:beige;
+    padding: 2rem;
+}
+
+.exp_education--rows {
+    display: flex;
+}
+
+.exp_education--time {
+    width: 39vw;
+}
+
+.exp ul {
+    list-style: none;
+}
+
+.exp_work--time {
+    width: 20vw;
+}
+
+/* Abilities */
+
+.abi ul {
+    list-style: none;
+}
+
+.skill ul {
+    list-style: none;
+}
+
+.skill li {
+    padding: 5px;
+    width: 3px;
+    display: inline-block;
+    border: 1px solid rgb(180, 180, 180);
+}
+
+.skill--open {
+    border: 1px solid rgb(20, 209, 168) !important;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.skill {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.rating {
+    position: absolute;
+    right: 2rem;
+}
+
+.abi_checkinfo {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn_checkinfo {
+    padding: 5px;
+    color: white;
+    background-color: rgb(20, 209, 168);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.abi_checkinfo p {
+    color: rgb(212, 212, 212);
+
+}
+
+.abi_checkinfo a {
+    cursor: pointer;
+}
+
+/* languages */
+
+.lang ul{
+    list-style: none;
+}
+
